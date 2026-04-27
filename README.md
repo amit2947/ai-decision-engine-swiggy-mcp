@@ -4,7 +4,13 @@ An AI-powered decision engine that converts natural language cravings into struc
 
 ---
 
-## 🚀 Demo
+## 🌐 Try the App
+
+Experience the AI-powered food decision assistant here:
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-decision-assistant-swiggy-mcp-ak108.streamlit.app/)
+
+## 🚀 App Screenshot
 
 ![App Screenshot](screenshot.png)
 
