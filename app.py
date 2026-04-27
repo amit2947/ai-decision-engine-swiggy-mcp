@@ -13,8 +13,18 @@ if "logged_in" not in st.session_state:
 if "otp" not in st.session_state:
     st.session_state.otp = None
 
+# LOGIN SCREEN
 if not st.session_state.logged_in:
+
     st.title("🔐 Login with Mobile OTP (Demo)")
+
+    # 👉 Guest login
+    if st.button("🚀 Continue as Guest"):
+        st.session_state.logged_in = True
+        st.rerun()
+
+    st.divider()
+    st.markdown("### Or login with OTP")
 
     phone = st.text_input("Enter Mobile Number")
 
@@ -22,6 +32,8 @@ if not st.session_state.logged_in:
         if phone:
             st.session_state.otp = str(random.randint(1000, 9999))
             st.success(f"Demo OTP: {st.session_state.otp}")
+        else:
+            st.warning("Enter mobile number")
 
     entered = st.text_input("Enter OTP")
 
@@ -33,7 +45,7 @@ if not st.session_state.logged_in:
         else:
             st.error("Wrong OTP")
 
-    st.stop()
+    st.stop()   # ✅ VERY IMPORTANT
 
 # =========================
 # DATA
