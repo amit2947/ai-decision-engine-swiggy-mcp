@@ -1,57 +1,220 @@
-# AI Decision Engine for Food Ordering (Swiggy MCP)
+# 🍽️ AI Food Decision Assistant (Swiggy MCP Ready)
 
-## Overview
-This project demonstrates an AI-driven decision system that optimizes food ordering based on user constraints such as budget, delivery time, and cuisine preferences.
-
----
-
-## Key Features
-- Constraint-based filtering (budget, cuisine)
-- Multi-objective optimization (cost, rating, delivery time)
-- Explainable recommendations
-- Feedback loop (like/dislike)
-- Adaptive priority weighting
+An AI-powered decision engine that converts natural language cravings into structured preferences and provides **explainable restaurant recommendations**.
 
 ---
 
-## Demo
-
-Run locally:
-
-```bash
-streamlit run app.py
-
-## Screenshot
+## 🚀 Demo
 
 ![App Screenshot](screenshot.png)
 
 ---
 
-## Why This Matters
+## 👤 Who I Am
 
-- Reduces decision fatigue  
-- Mimics real-world platform decision systems  
-- Demonstrates AI-assisted decision-making  
-- Shows workflow-based intelligence instead of static recommendations  
+Individual developer building an AI-driven decision assistant for food discovery and ordering optimization.
 
 ---
 
-## Tech Stack
+## 💡 What This App Does
+
+This app helps users answer:
+
+👉 *"What should I eat?"*
+
+Instead of filters, it uses:
+
+- Natural language understanding  
+- Weighted decision logic  
+- Explainable recommendations  
+
+---
+
+## 🧠 Problem Solved
+
+Food apps today:
+- Show too many options  
+- Lack reasoning  
+- Require manual filtering  
+
+This app:
+- Understands intent directly  
+- Reduces decision fatigue  
+- Explains *why* a restaurant is recommended  
+
+---
+
+## ⚙️ How It Works
+
+```
+User Input (Natural Language)
+        ↓
+LLM Interpretation (intent → weights)
+        ↓
+Weighted Scoring Engine
+        ↓
+Filtered Restaurants
+        ↓
+Explainable Recommendations
+```
+
+---
+
+## 🧠 AI Interpretation
+
+Examples:
+
+- "cheap food" → cost ↑  
+- "best quality" → quality ↑  
+- "fast delivery" → delivery ↑  
+
+Budget slider dynamically influences cost sensitivity.
+
+---
+
+## 📊 Decision Variables
+
+| Variable | Meaning |
+|--------|--------|
+| Cost | Budget sensitivity |
+| Quality | Ratings & experience |
+| Delivery | Speed |
+
+---
+
+## 🍽️ Supported Cuisines
+
+- North Indian  
+- Chinese  
+- Italian  
+- Biryani  
+- South Indian  
+- Fast Food  
+
+---
+
+## 🧮 Recommendation Logic
+
+- Multi-objective weighted scoring  
+- Budget-aware filtering  
+- Preference-based ranking  
+
+---
+
+## 💬 Explainability Layer
+
+Each recommendation includes:
+
+- Why it matches user intent  
+- Price-quality balance  
+- Delivery alignment  
+- Cuisine match  
+
+---
+
+## 🔁 Personalization (Learning)
+
+- Stores user preferences (session-based)
+- Adapts weights over time
+- Ready for feedback loop (like/dislike)
+
+---
+
+## 🔗 MCP Integration (Swiggy Ready)
+
+This app acts as a **decision intelligence layer before MCP execution**
+
+### MCP Flow:
+
+```
+User Intent → AI Assistant → (THIS APP) → Swiggy MCP → Order Execution
+```
+
+### Value Addition:
+
+- Better intent understanding  
+- Transparent recommendations  
+- Reduced friction  
+
+---
+
+## 🧰 Tech Stack
 
 - Frontend: Streamlit  
 - Backend: Python  
-- Data: Mock dataset (to be replaced with Swiggy MCP APIs)
+- LLM: Groq (Llama / GPT OSS)  
+- Data: Mock dataset (API-ready)
 
 ---
 
-## Future Enhancements
+## 🔐 Compliance with Swiggy Guidelines
 
-- Integration with Swiggy MCP APIs  
-- Learning from user interactions  
-- Personalization using user feedback  
+### ✅ Allowed
+
+- AI-based recommendation engine  
+- Transparent reasoning  
+- MCP-compatible architecture  
+
+### 🚫 Not Doing
+
+- No scraping  
+- No misleading pricing  
+- No API misuse  
+- No ranking manipulation  
 
 ---
 
-## Note
+## 📦 Future Enhancements
 
-This is a prototype using mock data. Swiggy MCP APIs will be integrated upon access approval.
+- Swiggy API integration  
+- Real-time pricing  
+- Menu-level recommendations  
+- MCP direct ordering  
+
+---
+
+## ▶️ Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+---
+
+## 🌐 Deployment
+
+Deploy on Streamlit Cloud for public URL.
+
+---
+
+## 📊 Expected Scale
+
+- Current: <1K requests/day  
+- Scalable to MCP integration  
+
+---
+
+## 🔐 Data & Security
+
+- No personal data stored  
+- No payment handling  
+- Safe architecture  
+
+---
+
+## 📎 GitHub / Demo
+
+(Add your repo link here)
+
+---
+
+## 🧠 Why This Matters
+
+Food ordering is shifting:
+
+👉 UI-based → Intent-based decision systems  
+
+This app builds the **decision layer for AI commerce**.
+
+---
