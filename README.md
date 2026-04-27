@@ -205,7 +205,7 @@ Deploy on Streamlit Cloud for public URL.
 
 ## 📎 GitHub / Demo
 
-(Add your repo link here)
+https://github.com/amit2947/ai-decision-engine-swiggy-mcp
 
 ---
 
